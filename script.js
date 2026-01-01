@@ -1,1 +1,2 @@
-
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>

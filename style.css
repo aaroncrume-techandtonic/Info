@@ -1,1 +1,41 @@
 
+<style>
+        /* Shared Palette from Infographic */
+        :root {
+            --color-teal: #2A9D8F;
+            --color-salmon: #E76F51;
+            --color-sand: #E9C46A;
+            --color-slate: #264653;
+            --color-white: #F1FAEE;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--color-white);
+            color: var(--color-slate);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Custom Utility Classes */
+        .bg-teal { background-color: var(--color-teal); }
+        .bg-salmon { background-color: var(--color-salmon); }
+        .bg-slate { background-color: var(--color-slate); }
+        .text-teal { color: var(--color-teal); }
+        .text-salmon { color: var(--color-salmon); }
+        .text-slate { color: var(--color-slate); }
+        
+        .resource-card {
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>

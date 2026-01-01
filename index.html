@@ -1,4 +1,91 @@
-<!-- Main Content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & References | The River Returns Home</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Shared Palette from Infographic */
+        :root {
+            --color-teal: #2A9D8F;
+            --color-salmon: #E76F51;
+            --color-sand: #E9C46A;
+            --color-slate: #264653;
+            --color-white: #F1FAEE;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--color-white);
+            color: var(--color-slate);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Custom Utility Classes */
+        .bg-teal { background-color: var(--color-teal); }
+        .bg-salmon { background-color: var(--color-salmon); }
+        .bg-slate { background-color: var(--color-slate); }
+        .text-teal { color: var(--color-teal); }
+        .text-salmon { color: var(--color-salmon); }
+        .text-slate { color: var(--color-slate); }
+        
+        .resource-card {
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+    <!-- 
+        NO SVG USED. NO MERMAID JS USED.
+        Structure: Header -> Hero -> Resource Grid -> Footer.
+    -->
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate shadow-lg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-xl tracking-wider">KILT &bull; RESOURCES</span>
+                </div>
+                <div>
+                    <!-- Link back to main file (assuming in same directory) -->
+                    <a href="klamath_restoration.html" class="hover:bg-teal px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                        &larr; Back to Infographic
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-slate text-white py-16 px-6 text-center border-b-8 border-sand">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Sources of Truth</h1>
+            <p class="text-xl font-light text-gray-300">
+                The data, history, and statements used to construct "The River Returns Home."
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -88,3 +175,11 @@
         </div>
 
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate text-white py-8 text-center border-t border-gray-700">
+        <p class="text-sm opacity-75">&copy; 2025 Klamath Indigenous Land Trust Infographic Project.</p>
+    </footer>
+
+</body>
+</html>
